@@ -1,134 +1,188 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-body
-{
-    background: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+body {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.container
-{
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 1000px;
-    margin: 50px;
-    background: #FFFFFF;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
-.container .sidebar
-{
-    position: relative;
-    background: #F4F4F4;
-    padding: 40px;
+.container .sidebar {
+  position: relative;
+  background: #f4f4f4;
+  padding: 40px;
 }
 
-.container .main
-{
-    position: relative;
-    background:  #FFFFFF;
-    padding: 40px;
+.container .main {
+  position: relative;
+  background: #ffffff;
+  padding: 40px;
 }
 
-.profil
-{
-    position: relative;
+.profil {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.profil .img {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profil .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.iletisim {
+  padding-top: 20px;
+}
+
+.baslik {
+  letter-spacing: 3px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid black;
+}
+
+.iletisim ul {
+  position: relative;
+}
+
+.iletisim ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.iletisim ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 16px;
+}
+
+.hakkimda {
+  padding-top: 20px;
+}
+
+.beceriler {
+  padding-top: 20px;
+}
+
+.beceriler ul li {
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.diller {
+  padding-top: 20px;
+}
+
+.diller ul li {
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.isim {
+    margin-bottom: 20px;
+}
+
+.isim h1 {
+  padding: 25px 0px 20px 2px;
+  font-size: 80px;
+  line-height: 50px;
+  
+}
+
+.unvan {
+  background: #f4f4f4;
+  height: 60px;
+  margin-top: 30px;
+}
+
+.unvan h2 {
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.is-deneyimi {
+    padding-top: 28px;
+}
+
+.deneyim-kutu {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    margin: 20px 0px;
 }
 
-.profil .img
-{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.profil .img img
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.iletisim
-{
-    padding-top: 20px;
-}
-
-.baslik
-{
-    letter-spacing: 3px !important;
+.deneyim-kutu h2 {
+    font-size: 20px;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    border-bottom: 3px solid black;
+    padding-top: 5px;
+    font-weight: 200;
 }
 
-.iletisim ul
-{
-    position: relative;
+.deneyim-kutu h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-top: 5px;
+    font-weight: 150;
 }
 
-.iletisim ul li
-{
-    position: relative;
-    list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
+.deneyim-kutu p {
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
-.iletisim ul li .icon
-{
-    display: inline-block;
-    width: 30px;
-    font-size: 16px;
+.egitim-kutu {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
 }
 
-.hakkimda
-{
-    padding-top: 20px;
+.egitim-kutu h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    font-weight: 100;
 }
 
-.beceriler
-{
-    padding-top: 20px;
-}
-
-.beceriler ul li
-{
-    list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
-}
-
-.diller
-{
-    padding-top: 20px;
-}
-
-.diller ul li
-{
-    list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
+.egitim-kutu h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-top: 5px;
+    font-weight: 100;
 }
